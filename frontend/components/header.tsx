@@ -68,7 +68,11 @@ export default function Header() {
             asChild
             className="hidden text-xs sm:inline-flex"
           >
-            <Link href="https://github.com/" target="_blank" rel="noreferrer">
+            <Link
+              href="https://github.com/Rahulkumar703/Tiny-Link"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Github />
               View on GitHub
             </Link>
@@ -112,7 +116,7 @@ export default function Header() {
                 className="hidden text-xs sm:inline-flex mb-10"
               >
                 <Link
-                  href="https://github.com/"
+                  href="https://github.com/Rahulkumar703/Tiny-Link"
                   target="_blank"
                   rel="noreferrer"
                 >
