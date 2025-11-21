@@ -7,7 +7,8 @@ import { toast } from "sonner";
 import { getLinkByCode } from "@/services";
 import { useRouter } from "next/navigation";
 
-const BACKEND_URL = "http://localhost:5000";
+const BACKEND_URL =
+  process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000";
 
 export default function RedirectUrl({ code }: { code: string }) {
   const [errors, setErrors] = useState<Array<string> | null>(null);
