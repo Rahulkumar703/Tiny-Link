@@ -10,7 +10,7 @@ export const createLinkSchema = z.object({
     .string()
     .regex(/^[A-Za-z0-9]{6,8}$/, "6-8 characters. Only A-Z, a-z, 0-9")
     .optional()
-    .or(z.literal("")),
+    .or(z.literal(null)),
 });
 
 export const linkParamsSchema = z.object({

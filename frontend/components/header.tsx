@@ -31,7 +31,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b bg-background/80 backdrop-blur">
-      <div className="mx-auto flex h-18 max-w-5xl items-center justify-between px-3 sm:px-4 lg:px-0">
+      <div className="mx-auto flex h-18 max-w-6xl items-center justify-between px-3 sm:px-4 lg:px-0">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
             <span className="inline-flex size-10 items-center justify-center rounded-lg border">

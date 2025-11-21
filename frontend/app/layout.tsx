@@ -34,7 +34,13 @@ export default function RootLayout({
         <Providers>
           <NextTopLoader color="black" height={5} showSpinner={false} />
           <Header />
-          {children}
+
+          <main className="flex flex-col p-4">
+            <div className="max-w-6xl mx-auto w-full flex flex-col">
+              {children}
+            </div>
+          </main>
+
           <Toaster position="bottom-right" richColors theme="light" />
         </Providers>
       </body>

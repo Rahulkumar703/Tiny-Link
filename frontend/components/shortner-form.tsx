@@ -52,6 +52,14 @@ const ShortnerForm: React.FC = () => {
 
       if (!res.ok) {
         toast.error(res.message ?? "Failed to create short link.");
+        if (res?.errors) {
+          res.errors.forEach((error) => {
+            form.setError(error.path as keyof UrlFormValues, {
+              type: "manual",
+              message: error.message,
+            });
+          });
+        }
         return;
       }
 

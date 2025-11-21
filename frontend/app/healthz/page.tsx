@@ -14,7 +14,7 @@ export default async function HealthPage() {
   const isHealthy = health.ok === true;
 
   return (
-    <div className="mx-auto max-w-xl space-y-4 pt-4">
+    <div className="flex flex-col gap-4">
       <h1 className="text-xl font-semibold tracking-tight">System Health</h1>
 
       <Card className="shadow-sm">

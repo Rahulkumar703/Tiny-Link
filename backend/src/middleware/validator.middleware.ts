@@ -17,8 +17,10 @@ export const validateData = (
       }));
 
       return res.status(400).json({
+        ok: false,
         message: "Validation Error",
         errors,
+        timestamp: Date.now(),
       });
     }
 

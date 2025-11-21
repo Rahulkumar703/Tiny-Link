@@ -45,7 +45,7 @@ export default function RedirectUrl({ code }: { code: string }) {
   }, [code, router]);
 
   return (
-    <div className="flex min-h-[60vh] items-center justify-center px-4">
+    <div className="flex min-h-[calc(100vh-7rem)] items-center justify-center w-full">
       <Card className="w-full max-w-sm shadow-sm">
         <CardHeader className="flex flex-row items-center gap-2">
           <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg border">

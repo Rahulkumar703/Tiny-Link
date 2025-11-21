@@ -43,7 +43,7 @@ export default async function CodeStatsPage({
   const link = res.data as LinkType;
 
   return (
-    <div className="mx-auto max-w-2xl pt-4">
+    <div className="pt-4">
       <LinkStats link={link} />
     </div>
   );

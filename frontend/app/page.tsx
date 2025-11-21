@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <main className="flex min-h-[calc(100vh-4.6rem)] flex-col gap-10 p-4">
+    <div className="flex flex-col gap-10">
       <ShortnerForm />
       <LinksList />
-    </main>
+    </div>
   );
 }

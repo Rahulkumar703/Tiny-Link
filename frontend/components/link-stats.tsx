@@ -46,7 +46,7 @@ export const LinkStats: React.FC<LinkStatsProps> = ({ link }) => {
   const totalClicks = link.clicks ?? 0;
 
   return (
-    <Card className="shadow-sm">
+    <Card className="shadow-sm w-full">
       <CardHeader className="flex flex-col gap-2">
         <div className="flex justify-between border-b pb-3 w-full">
           <Link
